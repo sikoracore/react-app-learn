@@ -1,0 +1,25 @@
+.userBageRoot {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.userBageAvatar {
+   width: 25px;
+   height: 25px;
+   margin-right: 10px;
+   border-radius: 50%;
+}
+
+.userBageNone {
+   width: 25px;
+   height: 25px;
+   margin-right: 10px;
+   border-radius: 50%;
+   background-color: #efefef;
+}
+.userBageName {
+   font-size: 14px;
+   font-weight: 500;
+   color: #000;
+}
