@@ -1,1 +1,1 @@
-https://github.com/sikoracore/react-app-learn
+https://sikoracore.github.io/react-app-learn
