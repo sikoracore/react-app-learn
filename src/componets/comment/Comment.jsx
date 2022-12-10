@@ -1,12 +1,12 @@
 import './Comment.scss'
 
 const Comment = ({
-	nickName,
+	nickname,
 	text
 }) => {
 	return (
 		<div className='commentRoot'>
-			<span className='commentName'>{nickName}:</span>
+			<span className='commentName'>{nickname}:</span>
 			<span className='commentText'>{text}</span>
 		</div>
 	)

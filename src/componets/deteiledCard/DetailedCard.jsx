@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { nanoid } from 'nanoid'
 import UserBage from '../userBage/UserBage';
 import Comment from '../comment/Comment'
 
@@ -23,11 +24,11 @@ const DetailedCard = ({
 			return (
 				<>
 					<span className='detailedCardCommentTitle' onClick={() => setIsCommentsShow(true)}>{`Показать еще ${comments.length - commentForRender.length} комментариев`}</span>
-					{commentForRender.map((comment) => <Comment {...comment} />)}
+					{commentForRender.map((comment) => <Comment {...comment} key={nanoid()} />)}
 				</>
 			)
 		}
-		return comments.map((comment) => <Comment {...comment} />)
+		return comments.map((comment) => <Comment {...comment} key={nanoid()} />)
 	}
 
   return (
