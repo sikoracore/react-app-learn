@@ -1,0 +1,16 @@
+.mainPageRoot {
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.mainPageCard {
+   margin-bottom: 10px;
+}
+
+.mainPageLoaderContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

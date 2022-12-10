@@ -11,14 +11,15 @@ const DetailedCard = ({
 	imgUrl,
 	likes,
 	isLikeByYou,
-	comments
+	comments,
+	className
 }) => {
 	const [isCommentsShow, setIsCommentsShow] = useState(false);
 
 	const renderComments = () => {
 		if (comments.length > 2 && !isCommentsShow) {
-			const commentForRender = [...comments]
-			commentForRender.splice(comments.length - 2, 2)
+			const commentsCopy = [...comments]
+			const commentForRender = commentsCopy.splice(comments.length - 2, 2)
 			return (
 				<>
 					<span className='detailedCardCommentTitle' onClick={() => setIsCommentsShow(true)}>{`Показать еще ${comments.length - commentForRender.length} комментариев`}</span>
